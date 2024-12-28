@@ -1,6 +1,6 @@
 {
   "name": "quack-logger",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Replace boring console.log with a quack!",
   "main": "dist/cjs/index.cjs",
   "exports": {
@@ -30,7 +30,7 @@
   "author": "zejj42",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.4.1"
+    "chalk": "^4.1.2"
   },
   "devDependencies": {
     "rimraf": "^3.0.2"
