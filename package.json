@@ -1,0 +1,49 @@
+{
+  "name": "quack-logger",
+  "version": "1.0.0",
+  "description": "Replace boring console.log with a quack!",
+  "main": "dist/cjs/index.cjs",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.cjs",
+      "import": "./dist/esm/index.mjs"
+    }
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && node build.js",
+    "test": "npm run test:cjs && npm run test:esm",
+    "test:cjs": "node tests/test-cjs.js",
+    "test:esm": "node tests/test-esm.mjs"
+  },
+  "keywords": [
+    "console",
+    "log",
+    "quack",
+    "logger",
+    "duck"
+  ],
+  "author": "zejj42",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.4.1"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zejj42/quack-logger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zejj42/quack-logger/issues"
+  },
+  "homepage": "https://github.com/zejj42/quack-logger#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
