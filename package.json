@@ -1,6 +1,6 @@
 {
   "name": "quack-logger",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Replace boring console.log with a quack!",
   "main": "dist/cjs/index.cjs",
   "exports": {
